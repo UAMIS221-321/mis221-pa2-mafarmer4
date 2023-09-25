@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/mis221-pa2-mafarmer4.csproj": {}
+  },
+  "projects": {
+    "/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/mis221-pa2-mafarmer4.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/mis221-pa2-mafarmer4.csproj",
+        "projectName": "mis221-pa2-mafarmer4",
+        "projectPath": "/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/mis221-pa2-mafarmer4.csproj",
+        "packagesPath": "/Users/micahfarmer/.nuget/packages/",
+        "outputPath": "/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/micahfarmer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet@6/6.0.114/libexec/sdk/6.0.114/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
