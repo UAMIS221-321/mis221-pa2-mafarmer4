@@ -1,0 +1,15 @@
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/bin/Debug/net6.0/mis221-pa2-mafarmer4
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/bin/Debug/net6.0/mis221-pa2-mafarmer4.deps.json
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/bin/Debug/net6.0/mis221-pa2-mafarmer4.runtimeconfig.json
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/bin/Debug/net6.0/mis221-pa2-mafarmer4.dll
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/bin/Debug/net6.0/ref/mis221-pa2-mafarmer4.dll
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/bin/Debug/net6.0/mis221-pa2-mafarmer4.pdb
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/obj/Debug/net6.0/mis221-pa2-mafarmer4.csproj.AssemblyReference.cache
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/obj/Debug/net6.0/mis221-pa2-mafarmer4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/obj/Debug/net6.0/mis221-pa2-mafarmer4.AssemblyInfoInputs.cache
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/obj/Debug/net6.0/mis221-pa2-mafarmer4.AssemblyInfo.cs
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/obj/Debug/net6.0/mis221-pa2-mafarmer4.csproj.CoreCompileInputs.cache
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/obj/Debug/net6.0/mis221-pa2-mafarmer4.dll
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/obj/Debug/net6.0/ref/mis221-pa2-mafarmer4.dll
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/obj/Debug/net6.0/mis221-pa2-mafarmer4.pdb
+/Users/micahfarmer/Desktop/mis221/pas/mis221-pa2-mafarmer4/obj/Debug/net6.0/mis221-pa2-mafarmer4.genruntimeconfig.cache
