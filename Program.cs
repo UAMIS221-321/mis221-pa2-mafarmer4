@@ -1,11 +1,10 @@
 ﻿// PA2
 
 // ***** Main *****
-
 DisplayMenu(); 
 string userChoice = Console.ReadLine(); 
 
-while (userChoice != "5")
+while(userChoice != "5")
 {
     RouteEm(userChoice); 
     userChoice = Console.ReadLine(); 
@@ -30,7 +29,7 @@ static void RouteEm(string userChoice)
         }
     else if(userChoice == "3") 
         {
-            ParkEvents();  
+            ParkEvents(); 
         }
     else if(userChoice == "4")
         {
@@ -80,7 +79,6 @@ static void DisplayCompass()
 
     int totalTurns = rightTurns - leftTurns;
 
-    
     if(totalTurns % 4 == 0)
     {
         direction = "North"; 
@@ -99,7 +97,7 @@ static void DisplayCompass()
     }
     
     // Outputs Direction Facing Based On Inputed Number Of Right/Left Turns
-    Console.WriteLine($"You are facing {direction}!"); 
+    System.Console.WriteLine($"You are facing {direction}!"); 
 
     Pause(); 
     DisplayMenu(); 
@@ -167,7 +165,7 @@ static void ParkFees()
     // Checks If The Amount Paid Is Sufficient
     if (amountPaid < amountDue)
     {
-        System.Console.WriteLine("Error!! Insufficient payment!!");
+        System.Console.WriteLine("ERROR!! INSUFFICIENT PAYMENT!!");
     }
     else
     {
@@ -183,21 +181,208 @@ static void ParkFees()
     DisplayMenu(); 
 }
 
-// Park Event Calender (Extra)
+// Park Events & Activities Calender (Extra)
 static void ParkEvents()
 {
-    System.Console.WriteLine("Welcome to the park event calendar!\n press any key to continue to list continue to event list:");  
+    System.Console.WriteLine("Welcome to the Park Events &  Activities Calendar!\n press any key to continue to list continue to event booking menu:");  
     Console.ReadKey(); 
     Console.Clear(); 
 
-    // Asks User To Select A Time and Displays The Events Scheduled And Their Duration
+    // Asks User To Select A Time -- Displays The Events Scheduled And Their Duration
     string timeChoice = " "; 
-    System.Console.WriteLine("The park hosts special events throughout the day starting from 9:00am - 5:00pm");
-    System.Console.WriteLine("Enter a time: "); 
+    System.Console.WriteLine(
+    @"The park hosts special events throughout the day starting from 9:00am - 5:00pm
+    **ALL EVENTS HAVE A MINIMUM OF 1/2hr LONG DURATION**
+    'Nature Watches & Wildlife Excursions' may last up to 2 hrs");
+    SkipLine();
+    System.Console.WriteLine("Enter a time slot between -- (9:00am - 4:00pm): "); 
     timeChoice = Console.ReadLine();
 
+    EventList(timeChoice); 
     Pause(); 
     DisplayMenu();      
+}
+
+// Method For Event List (ParkEvents)
+static void EventList(string timeChoice)
+{
+    string bookEvent = Console.ReadLine();
+    while (timeChoice != "5:00pm")
+    {
+        switch(timeChoice)
+        {
+            // 9:00 AM Events 
+            case "9:00am":
+                System.Console.WriteLine("9:00 Event Selection");
+                System.Console.WriteLine("1: Archery -- 9:00am to 9:30am");
+                System.Console.WriteLine("2: Guided Park Tour & Hike -- 9:00am to 10:00am");
+                System.Console.WriteLine("3: Fishing -- 9:00am to 10:00am ");
+                bookEvent = Console.ReadLine();
+                
+                    if(bookEvent == "1")
+                    {
+                        System.Console.WriteLine("See you at Archery at 9:00am!!");     
+                    }
+                    else if(bookEvent == "2")
+                    {
+                        System.Console.WriteLine("Glad you booked the Guided Park Tour & Hike! We'll see you then!");     
+                    }
+                    else if(bookEvent == "3")
+                    {
+                        System.Console.WriteLine("Great choice. Have fun fishing!");
+                    }
+                    else
+                    {
+                        DisplayError();
+                    }
+                
+            break;
+
+            // 10:00 AM Events
+            case "10:00am":
+                System.Console.WriteLine("10:00 Event Selection");
+                System.Console.WriteLine("1: Archery -- 10:00am to 10:30am");
+                System.Console.WriteLine("2: Guided Park Tour & Hike -- 10:00am to 11:00am");
+                System.Console.WriteLine("3: Rock Climbing Tower & ZipLine  -- 10:00am to 11:00am");
+                System.Console.WriteLine("4: Fishing -- 10:00am to 11:00am");
+                bookEvent = Console.ReadLine(); 
+                if(bookEvent == "1")
+                {
+                    System.Console.WriteLine("See you at Archery at 10:00am!!");                
+                }
+                else if(bookEvent == "2")
+                {
+                    System.Console.WriteLine("Glad you booked the Guided Park Tour & Hike!! We'll see you then!");
+                }
+                else if(bookEvent == "3")
+                {
+                    System.Console.WriteLine("Can't for you to join us for Rock Climbing! See you at the bottom!");
+                }
+                else if(bookEvent == "4")
+                {
+                   System.Console.WriteLine("Great choice. Have fun fishing!");
+                }
+                else
+                {
+                    DisplayError(); 
+                }
+            break; 
+
+            // 11:00 AM Events
+            case "11:00am":
+                System.Console.WriteLine("11:00 Event Selection");
+                System.Console.WriteLine("1: Swimming -- 11:00am to 12:00pm");
+                System.Console.WriteLine("2: Nature Scavenger Hunt -- 11:00am to 12:00pm");
+                System.Console.WriteLine("3: Photography Workshop -- 11:00am to 11:30pm");
+                bookEvent = Console.ReadLine(); 
+                if(bookEvent == "1")
+                {
+                    System.Console.WriteLine("Swimming it is! See you at 11!");
+                }
+                else if(bookEvent == "2")
+                {
+                    System.Console.WriteLine("It's booked! We better find you at the Nature Scavenger Hunt.");
+                }
+                else if(bookEvent == "3")
+                {
+                    System.Console.WriteLine("Let's do it! Photography is best at 11 o'clock in the morning.");
+                }
+                else
+                {
+                    DisplayError(); 
+                }
+            break; 
+
+            // 12:00 PM Events
+            case "12:00pm":
+                System.Console.WriteLine("12:00 Event Selection");
+                System.Console.WriteLine("1: Guided Park Tour & Hike -- 12:00pm to 1:00pm");
+                System.Console.WriteLine("2: Fishing -- 12:00pm to 1:00pm");
+                System.Console.WriteLine("3: Rock Climbing & ZipLine -- 12:00pm to 1:00pm");
+                System.Console.WriteLine("4: Nature Watch & Wildlife Excursion -- 12:00pm to 2:00pm");
+                bookEvent = Console.ReadLine();
+                if(bookEvent == "1")
+                {
+                   System.Console.WriteLine("Glad you booked the Guided Park Tour & Hike!! We'll see you then!"); 
+                }
+                else if(bookEvent == "2")
+                {
+                   System.Console.WriteLine("Great choice. Have fun fishing!"); 
+                }
+                else if(bookEvent == "3")
+                {
+                    System.Console.WriteLine("Can't for you to join us for Rock Climbing! See you at the bottom!");
+                }
+                else if(bookEvent == "4")
+                {
+                    System.Console.WriteLine("We overjoyed you've decided to join us for an exciting Nature Watch & Wildlife Excursion!");
+                }
+                else
+                {
+                    DisplayError();
+                }
+            break;
+
+            // 1:00 PM Events
+            case "1:00pm":
+                System.Console.WriteLine("1:00 Event Selection");
+                System.Console.WriteLine("1: Archery -- 1:00pm to 1:30pm");
+                System.Console.WriteLine("2: Photography Workshop -- 1:00pm to 1:30pm");
+                System.Console.WriteLine("3: Swimming -- 1:00pm - 2:00pm");
+                System.Console.WriteLine("4: Nature Watch & Wildlife Excursion -- 1:00pm to 3:00pm");
+                bookEvent = Console.ReadLine(); 
+                if(bookEvent == "1")
+                {
+                   System.Console.WriteLine("See you at Archery at 10:00am!!");  
+                }
+                else if(bookEvent == "2")
+                {
+                   System.Console.WriteLine("Let's do it! Photography is best at 1 o'clock in the afternoon."); 
+                }
+                else if(bookEvent == "3")
+                {
+                    
+                }
+                else if(bookEvent == "4")
+                {
+
+                }
+                else
+                {
+
+                }
+            break;
+
+            // 2:00 PM Events
+            case "2:00pm":
+                System.Console.WriteLine("2:00 Event Selection");
+                System.Console.WriteLine("1: Nature Scavenger Hunt -- 2:00pm to 3:00pm");
+                System.Console.WriteLine("2: Fishing -- 2:00pm to 3:00pm");
+                System.Console.WriteLine("3: Rock Climbing & ZipLine -- 2:00pm to 3:00pm");
+                bookEvent = Console.ReadLine(); 
+            break;
+
+            // 3:00 PM Events
+            case "3:00pm":
+                System.Console.WriteLine("3:00 Event Selection");
+                System.Console.WriteLine("1: Archery -- 3:00pm to 3:30pm");
+                System.Console.WriteLine("2: Swimming -- 3:00pm to 4:00pm");
+                System.Console.WriteLine("3: Fishing -- 3:00om 4:00pm");
+                System.Console.WriteLine("4: Photography Workshop -- 3:00pm to 4:00pm");                
+                bookEvent = Console.ReadLine(); 
+            break;
+   
+            // 4:00 PM Events
+            case "4:00pm":
+                System.Console.WriteLine("4:00 Event Selection");
+                System.Console.WriteLine("1: Rock Climbing & ZipLine -- 4:00pm to 5:00pm");
+                System.Console.WriteLine("2: Guided Park Tour & Hike -- 4:00pm to 5:00pm");
+                System.Console.WriteLine("3: Swimming -- 4:00pm to 5:00pm");            
+                bookEvent = Console.ReadLine(); 
+            break;
+        }   
+        return;
+    }    
 }
 
 // Leave A Rating Or Review (Extra)
@@ -217,57 +402,63 @@ static void FeedBackFromExperience()
         {
             // Response If Rated "1"
             case "1":
-                System.Console.WriteLine("We are so sorry you did not enjoy your experience with our application :(");
-                System.Console.WriteLine("");
+                System.Console.WriteLine("We are sorry you did not enjoy your experience with our application :(");
+                SkipLine();
                 System.Console.WriteLine("Please tell us why you rated '1' and how we could improve: ");
                 userFeedback = Console.ReadLine();
                 Console.Clear();
-                break; 
+            break; 
 
             // Response If Rated "2"
             case "2":
-                System.Console.WriteLine("We are so sorry you did not enjoy your experience with our application :(");
-                System.Console.WriteLine("");
+                System.Console.WriteLine("We are sorry you did not enjoy your experience with our application :(");
+                SkipLine();
                 System.Console.WriteLine("Please tell us why you rated '2' and how we could improve: ");
                 userFeedback = Console.ReadLine(); 
                 Console.Clear(); 
-                break;
+            break;
 
             // Response If Rated "3"
             case "3":
-                System.Console.WriteLine("We see that experience could have been better");
-                System.Console.WriteLine("");
+                System.Console.WriteLine("We see that the experience could have been better");
+                SkipLine();
                 System.Console.WriteLine("Please tell us why you rated '3' and how we could improve: ");
                 userFeedback = Console.ReadLine(); 
                 Console.Clear(); 
-                break; 
+            break; 
 
             // Response If Rated "4"
             case "4":
                 System.Console.WriteLine("We are thrilled you enjoyed your experience with our application :) ");
-                System.Console.WriteLine("");
+                SkipLine();
                 System.Console.WriteLine("Please tell us why you rated '4' and what we could do better: ");
                 userFeedback = Console.ReadLine(); 
                 Console.Clear(); 
-                break;
+            break;
 
             // Response If Rated "5"
             case "5":
                 System.Console.WriteLine("We are overjoyed that you enjoy experience with our application :) ");
-                System.Console.WriteLine("");
+                SkipLine();
                 System.Console.WriteLine("Please tell us why are rated '5' and what liked most: ");
                 userFeedback = Console.ReadLine();
                 Console.Clear(); 
-                break; 
+            break; 
 
                 Console.ReadKey();      
         }  
             // Output Message Thanking User For Their Feedback 
             System.Console.WriteLine("We appreciate your feedback. Have a great day!");
-            Pause(); 
-            DisplayMenu(); 
+                Pause(); 
+                DisplayMenu(); 
             return; 
     }      
+}
+
+// Method That Creates A Single Line Space 
+static void SkipLine()
+{
+    System.Console.WriteLine("");
 }
 
 // User Error Message
@@ -279,7 +470,7 @@ static void DisplayError()
 // Returns To Menu
 static void Pause()
 {
-    Console.WriteLine("When done, press any key to return to main menu"); 
+    System.Console.WriteLine("When done, press any key to return to main menu"); 
     Console.ReadKey(); 
     Console.Clear(); 
 }
