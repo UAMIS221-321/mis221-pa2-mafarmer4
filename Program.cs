@@ -184,7 +184,7 @@ static void ParkFees()
 // Park Events & Activities Calender (Extra)
 static void ParkEvents()
 {
-    System.Console.WriteLine("Welcome to the Park Events &  Activities Calendar!\n press any key to continue to list continue to event booking menu:");  
+    System.Console.WriteLine("Welcome to the Park Events & Activities Calendar!\n press any key to continue to list continue to event booking menu:");  
     Console.ReadKey(); 
     Console.Clear(); 
 
@@ -211,7 +211,7 @@ static void EventList(string timeChoice)
     {
         switch(timeChoice)
         {
-            // 9:00 AM Events 
+            // 9:00 AM  
             case "9:00am":
                 System.Console.WriteLine("9:00 Event Selection");
 
@@ -238,7 +238,7 @@ static void EventList(string timeChoice)
                 }
             break;
 
-            // 10:00 AM Events
+            // 10:00 AM 
             case "10:00am":
                 System.Console.WriteLine("10:00 Event Selection");
 
@@ -270,7 +270,7 @@ static void EventList(string timeChoice)
                 }
             break; 
 
-            // 11:00 AM Events
+            // 11:00 AM 
             case "11:00am":
                 System.Console.WriteLine("11:00 Event Selection");
 
@@ -297,7 +297,7 @@ static void EventList(string timeChoice)
                 }
             break; 
 
-            // 12:00 PM Events
+            // 12:00 PM 
             case "12:00pm":
                 System.Console.WriteLine("12:00 Event Selection");
 
@@ -329,7 +329,7 @@ static void EventList(string timeChoice)
                 }
             break;
 
-            // 1:00 PM Events
+            // 1:00 PM 
             case "1:00pm":
                 System.Console.WriteLine("1:00 Event Selection");
 
@@ -361,7 +361,7 @@ static void EventList(string timeChoice)
                 }
             break;
 
-            // 2:00 PM Events
+            // 2:00 PM 
             case "2:00pm":
                 System.Console.WriteLine("2:00 Event Selection");
 
@@ -388,7 +388,7 @@ static void EventList(string timeChoice)
                 }
             break;
 
-            // 3:00 PM Events
+            // 3:00 PM 
             case "3:00pm":
                 System.Console.WriteLine("3:00 Event Selection");
 
@@ -420,7 +420,7 @@ static void EventList(string timeChoice)
                 }
             break;
    
-            // 4:00 PM Events
+            // 4:00 PM 
             case "4:00pm":
                 System.Console.WriteLine("4:00 Event Selection");
 
